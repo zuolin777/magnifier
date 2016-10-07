@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>magnifier</title>
+		<style>
+			#min{
+				width:400px;
+				height:200px;
+				border:1px solid salmon;
+				position: relative;
+			}
+			#min img{
+				width:100%;
+				height:100%;
+			}
+			#slider{
+				width:50%;
+				height:50%;
+				background: lavender;
+				opacity: 0.5;
+				position: absolute;
+				left:0;
+				top:0;
+			}
+			#max{
+				width:800px;
+				height:400px;
+				position: absolute;
+				left:500px;
+				top:10px;
+				border:1px solid red;
+				overflow: hidden;
+			}
+		</style>
+		<script src="./jquery-2.1.1.js"></script>
+		<script src="./magnifier.js"></script>
+		<script>
+			$(function(){
+				$(document).Magnifier();
+			})
+		</script>
+	</head>
+	<body>
+		<div id="min">
+			<img src="img/list5.jpg"/>
+			<div id="slider"></div>
+		</div>
+		<div id="max">
+			<img src="img/list5.jpg"/>
+		</div>
+	</body>
+</html>
